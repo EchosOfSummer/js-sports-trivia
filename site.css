@@ -1,4 +1,51 @@
 /* Global Styles */
+
+.glitch {
+	/* font-size: 20px; */
+	color: black;
+	animation: glitch 1.8s infinite;
+	/* text-shadow:
+		0 0 5px #ff0000,
+		0 0 10px #186f14 */
+}
+@keyframes glitch {
+	0%{
+		opacity: 1;
+		text-shadow:
+			0 0 5px #00ff3c,
+			0 0 10px #186f14;
+			transform: translateY(0) scaleY(1) skewY(0deg);
+	}
+	25% { 
+		opacity: 0.7;
+		text-shadow:
+			0 0 7px #ff00c8,
+			0 0 12px #6f186f;
+			transform: translateY(-2px) scaleY(1.05) skewY(-1deg);
+	}
+	50% { 
+		opacity: 0.6;
+		text-shadow:
+			0 0 10px #ff00c8,
+			0 0 15px #6f186f;
+			transform: translateY(1px) scaleY(1.6) skewY(0deg);
+	}
+	75% {
+		opacity: 0.8;
+		text-shadow:
+			0 0 7px #00d8ff,
+			0 0 12px #146f6f;
+			transform: translateY(-2px) scaleY(1.05) skewY(-1deg);
+	}
+	100% {
+		opacity: 1;
+		text-shadow:
+			0 0 5px #00ff3c,
+			0 0 10px #186f14;
+			transform: translateY(0) scaleY(1) skewY(0deg);
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -40,6 +87,7 @@ p {
 	margin-bottom: 20px;
 	color: #555;
 }
+
 
 /* Button Group */
 div>div {
